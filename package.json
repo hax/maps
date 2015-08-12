@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "mocha --ui tdd --compilers js:babel/register",
-		"coveralls": "istanbul cover _mocha && istanbul-coveralls"
+    "coveralls": "istanbul cover _mocha && istanbul-coveralls"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,8 @@
   "homepage": "https://github.com/hax/maps#readme",
   "devDependencies": {
     "babel": "^5.8.21",
+    "istanbul": "^0.3.17",
+    "istanbul-coveralls": "^1.0.3",
     "mocha": "^2.2.5"
   }
 }
