@@ -19,6 +19,7 @@ Object.prototype[equals] = function (x) {
 	const keys = Object.getOwnPropertySymbols(this).concat(Object.getOwnPropertyNames(this))
 	for (let i = 0; i < keys.length; ++i) {
 		const k = keys[i]
+		if (/^Symbol\(id\)_/.test(k)) continue // bypass core-js Map hack
 		if (!eq(this[k], x[k])) return false
 	}
 	return true
