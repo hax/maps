@@ -1,0 +1,31 @@
+{
+  "name": "hashmap.js",
+  "version": "0.1.0",
+  "description": "HashMap implementation for ES6+",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --ui tdd --compilers js:babel/register",
+		"coveralls": "istanbul cover _mocha && istanbul-coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hax/HashMap.js.git"
+  },
+  "keywords": [
+    "HashMap",
+    "HashSet"
+  ],
+  "author": "johnhax@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hax/HashMap.js/issues"
+  },
+  "homepage": "https://github.com/hax/HashMap.js#readme",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "mocha": "^2.2.5"
+  }
+}
