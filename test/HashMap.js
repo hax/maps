@@ -2,7 +2,7 @@ import assert from 'assert'
 import HashMap from '../src/HashMap'
 const hashCode = Symbol.for('hashCode')
 
-suite('hashmap', () => {
+suite('HashMap', () => {
 	class Test {
 		constructor(id) {
 			this.id = id
