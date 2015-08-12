@@ -12,5 +12,5 @@
 [coveralls-image]: https://img.shields.io/coveralls/hax/maps.js.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/hax/maps.js
 [downloads-image]: http://img.shields.io/npm/dm/maps.svg?style=flat-square
-<!--[codacy-image]: https://img.shields.io/codacy/4ce5706252da43709594735f4728ad83.svg?style=flat-square
-[codacy-url]: https://www.codacy.com/public/hax/mmclass-->
+<!--[codacy-image]: https://img.shields.io/codacy/4ce5706252da43709594735f4728ad83.svg?style=flat-square-->
+<!--[codacy-url]: https://www.codacy.com/public/hax/mmclass-->
