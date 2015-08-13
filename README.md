@@ -1,12 +1,13 @@
-[![NPM version][npm-image]][npm-url]
-[![Build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
-[![Downloads][downloads-image]][npm-url]
+[![NPM Version](https://img.shields.io/npm/v/maps.svg)][npm-url]
+[![Build Status](https://travis-ci.org/hax/maps.svg?branch=master)](https://travis-ci.org/hax/maps)
+[![Coverage Status](https://coveralls.io/repos/hax/maps/badge.svg?branch=master&service=github)](https://coveralls.io/github/hax/maps?branch=master)
+[![Downloads](http://img.shields.io/npm/dm/maps.svg)][npm-url]
 
+[npm-url]: https://npmjs.org/package/maps
 
 # maps
 
--- Some specical Map implementations for ES6+
+Some special Map implementations for ES6+
 
 ## Install
 
@@ -43,15 +44,3 @@ assert(m.get(e2) === test)
 ## API
 
 Same as standard [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
-
-
-
-
-
-[npm-image]: https://img.shields.io/npm/v/maps.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/maps
-[travis-image]: https://img.shields.io/travis/hax/maps.svg?style=flat-square
-[travis-url]: https://travis-ci.org/hax/maps
-[coveralls-image]: https://img.shields.io/coveralls/hax/maps.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/hax/maps
-[downloads-image]: http://img.shields.io/npm/dm/maps.svg?style=flat-square
