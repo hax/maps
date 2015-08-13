@@ -33,12 +33,13 @@ suite('eq', () => {
 		assert(!eq(Object.create(proto), Object.create({})))
 	})
 	test('object with equals method', () => {
-		assert(eq({[Symbol.for('equals')]: function () { return true }}, {}))
+		assert(eq({[Symbol.for('equals')]: function (x) { return x.flag === 1 }}, {flag: 1}))
+		assert(!eq({[Symbol.for('equals')]: function (x) { return x.flag === 1 }}, {flag: 2}))
 		class Test {
 			constructor(id) {
 				this.id = id
 			}
-			equals(x) {
+			[Symbol.for('equals')](x) {
 				return this.id === x.id
 			}
 		}
