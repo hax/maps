@@ -2,7 +2,7 @@
   "name": "maps",
   "version": "0.2.0",
   "description": "Some special Map implementations for ES6+",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "directories": {
     "test": "test"
   },
@@ -10,7 +10,8 @@
     "test": "mocha --ui tdd --compilers js:babel/register",
     "compile-tests": "rm -rf es5-test && babel --external-helpers --source-maps --out-dir es5-test test",
     "istanbul": "babel-istanbul cover _mocha -- es5-test --ui tdd",
-    "coveralls": "npm run compile-tests && npm run istanbul && istanbul-coveralls"
+    "coveralls": "npm run compile-tests && npm run istanbul && istanbul-coveralls",
+    "prepublish": "rm -rf lib && babel --source-maps --out-dir lib src"
   },
   "repository": {
     "type": "git",
