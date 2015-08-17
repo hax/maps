@@ -1,9 +1,12 @@
 {
   "name": "maps",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Some special Map implementations for ES6+",
   "main": "lib/index.js",
-	"files": ["lib/", "src/"],
+  "files": [
+    "lib/",
+    "src/"
+  ],
   "directories": {
     "test": "test"
   },
