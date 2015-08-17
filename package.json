@@ -3,14 +3,14 @@
   "version": "0.3.2",
   "description": "Some special Map implementations for ES6+",
   "main": "lib/index.js",
+	"files": ["lib/", "src/"],
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "mocha --ui tdd --compilers js:babel/register",
-    "compile-tests": "rm -rf es5-test && babel --external-helpers --source-maps --out-dir es5-test test",
-    "istanbul": "babel-istanbul cover _mocha -- es5-test --ui tdd",
-    "coveralls": "npm run compile-tests && npm run istanbul && istanbul-coveralls",
+    "istanbul": "babel-node ./node_modules/.bin/babel-istanbul cover _mocha -- test --ui tdd",
+    "coveralls": "npm run istanbul && istanbul-coveralls",
     "prepublish": "rm -rf lib && babel --source-maps --out-dir lib src"
   },
   "repository": {
@@ -19,7 +19,8 @@
   },
   "keywords": [
     "HashMap",
-    "ArrayMap"
+    "ArrayMap",
+    "ES6"
   ],
   "author": "johnhax@gmail.com",
   "license": "ISC",
@@ -29,8 +30,7 @@
   "homepage": "https://github.com/hax/maps#readme",
   "devDependencies": {
     "babel": "^5.8.21",
-    "babel-core": "^5.8.22",
-    "babel-istanbul": "^0.2.10",
+    "babel-istanbul": "^0.3.17",
     "istanbul-coveralls": "^1.0.3",
     "mocha": "^2.2.5"
   }
