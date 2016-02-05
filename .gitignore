@@ -4,3 +4,11 @@ coverage
 # node.js
 node_modules
 npm-debug.log
+
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
