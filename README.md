@@ -7,6 +7,8 @@
 
 # maps
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/hax/maps.svg)](https://greenkeeper.io/)
+
 Some special Map implementations for ES6+
 
 ## Install
