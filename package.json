@@ -32,9 +32,9 @@
   },
   "homepage": "https://github.com/hax/maps#readme",
   "devDependencies": {
-    "babel": "^5.8.21",
-    "babel-istanbul": "^0.3.17",
+    "babel": "^6.23.0",
+    "babel-istanbul": "^0.12.2",
     "istanbul-coveralls": "^1.0.3",
-    "mocha": "^2.2.5"
+    "mocha": "^3.4.2"
   }
 }
